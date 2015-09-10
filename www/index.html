@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/core.css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <meta charset="utf-8" />
+        <!--Let browser know website is optimized for mobile-->
+        
+        <title>Talktor</title>
+    </head>
+    <body>
+        <div class="">
+            <nav class="teal">
+                <ul id="slide-out" class="side-nav">
+                    <li><a href="#!"><b>Hecho por:</b></a></li>
+                    <li><a href="#!"><i class="material-icons">&#xE87C;</i>  Borello Ignacio</a></li>
+                    <li><a href="#!"><i class="material-icons">&#xE87C;</i>  Castillo Luciano</a></li>
+                    <li><a href="#!"><i class="material-icons">&#xE87C;</i>  Gandolfo Romulo</a></li>
+                </ul>
+
+                <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="tiny mdi-navigation-menu"></i></a>
+                
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">Talktor</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <ul class="collection" id="divList">
+                
+                <!-- ACA VA LA FRUTA -->
+
+            </ul>
+
+            <div id="microfono" class="fixed-action-btn" style="bottom: 20px; right: 20px;">
+                <a class="btn-floating btn-large circle waves-effect waves-circle waves-light secondary-content orange"><i class="mdi-av-mic"></i></a>
+            </div>
+
+        </div>
+
+        <!-- Modal Structure -->
+        <div style="z-index: 1003; display: block; opacity: 0; bottom: -100%;" id="guardar-comando" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>Guardar comando</h4>
+            <p>Usted dijo: "<span id="comando"></span>". ¿Desea guradarlo como una accion?</p>
+          </div>
+
+          <div class="modal-footer">
+            <a href="#!" onclick="agregarAccion()" class=" modal-action modal-close waves-effect btn-flat">Guardar</a>
+            <a href="#!" onclick="" class=" modal-action modal-close waves-effect btn-flat">Descartar</a>
+          </div>
+
+        </div>
+
+        <footer id="footer" class="page-footer indigo" style="display: none;">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12" style="width:100%">
+                  <i class="medium mdi-av-skip-previous white-text waves-teal" style="overflow:initial;" onclick="prev()"></i>
+                  <i class="medium mdi-av-pause white-text waves-teal"  onclick="playPause()" id="playPause"></i>
+                  <i class="medium mdi-av-skip-next white-text waves-teal" onclick="next()" ></i></a>
+              </div>
+              <div class="col l4 offset-l2 s12">
+
+              </div>
+            </div>
+          </div>
+        </footer>
+        
+        
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+
+        <script type="text/javascript" src="js/iniciar.js"></script>
+
+        <script type="text/javascript" src="cordova.js"></script>
+
+    </body>
+</html>

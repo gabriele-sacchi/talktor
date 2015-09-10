@@ -1,0 +1,18 @@
+body{
+	padding-bottom: 10%;
+}
+.play{
+	overflow:initial;
+	float: right;
+	top:30px;
+}
+.deep-purple{
+	background-color:rgba(103, 58, 183, 0.77) !important;
+}
+#footer {
+    position: fixed;
+    z-index: 100; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+}
